@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUAT MIYAAA</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive;
+            text-align: center;
+            padding: 20px;
+            cursor: pointer;
+            background-color: #00FF00; /* Warna latar belakang hijau */
+            color: #fff; /* Warna teks utama */
+        }
+
+        #content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh; /* Mengurangi tinggi agar kredit tidak tertutup */
+            position: relative; /* Menambahkan posisi relatif pada konten */
+        }
+
+        .fade {
+            animation: fade 1s ease; /* Animasi pudar */
+        }
+
+        @keyframes fade {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        #credit {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 12px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body onclick="changeText()">
+    <div id="content">
+        <h1 id="main-text" class="fade">BUAT MIYAA</h1>
+        <!-- Tambahkan elemen untuk kredit -->
+        <div id="credit">Dibuat oleh Rapa untuk Miya menggunakan hati</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
